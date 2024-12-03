@@ -67,7 +67,7 @@
     }
     $query = "SELECT * FROM data_table WHERE id = $id";
     $result = $conn->query($query);
-    $data = $result->fetch_assoc();
+    $data = $result->fetc_assoc();
     ?>
     <form action="update_process.php" method="post">
       <input type="hidden" name="id" value="<?php echo $data['id']; ?>">
@@ -91,7 +91,7 @@
         <button type="submit">Update Data</button>
       </div>
     </form>
-    <a href="index.html" class="back-to-home">Back to Home</a>
+    <a href="index.html" class="back-to-home">Back to Home</a>  
   </div>
   <!-- Vendor JS Files -->
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
